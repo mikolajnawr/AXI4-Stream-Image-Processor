@@ -4,5 +4,3 @@ __pycache__/
 sim_build/
 results.xml
 
-# Output images (keep input.jpg, ignore generated outputs)
-output_gray.jpg
