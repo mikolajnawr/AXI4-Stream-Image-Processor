@@ -23,3 +23,10 @@ You need a Linux environment with Icarus Verilog and Python 3 installed.
 ```bash
 sudo apt install iverilog make
 pip3 install cocotb cocotbext-axi numpy pillow
+## 🖼️ Before & After (Hardware Processing)
+
+Here is the result of the image being processed pixel-by-pixel through the SystemVerilog hardware accelerator via AXI4-Stream:
+
+| Original Input (`pikachu.jpg`) | Hardware Output (`output_gray.jpg`) |
+| :---: | :---: |
+| <img src="pikachu.jpg" width="400"> | <img src="output_gray.jpg" width="400"> |
