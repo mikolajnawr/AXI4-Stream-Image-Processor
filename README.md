@@ -18,11 +18,22 @@ The module receives colored pixels via the **AXI4-Stream** protocol, converts th
 5. Python reconstructs the received byte array and saves it as `output_gray.jpg`.
 
 ## ⚙️ How to run the simulation
+
 ### Prerequisites
 You need a Linux environment with Icarus Verilog and Python 3 installed.
 ```bash
 sudo apt install iverilog make
 pip3 install cocotb cocotbext-axi numpy pillow
+```
+
+### Running the test
+1. Place your color image (e.g., `pikachu.jpg`) in the root directory (ensure the name matches the python script).
+2. Run the simulation using `make`:
+```bash
+make
+```
+3. Check the root directory for the hardware-processed `output_gray.jpg`!
+
 ## 🖼️ Before & After (Hardware Processing)
 
 Here is the result of the image being processed pixel-by-pixel through the SystemVerilog hardware accelerator via AXI4-Stream:
